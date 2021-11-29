@@ -1,3 +1,5 @@
+% Function to recover the output matrix from the input sigal and the
+% sensing matrix. 
 function recovered_percentage = sensing_matrix_method(U, signal, noisy_signal, s, n)
     % Output signal
     y = U*noisy_signal;

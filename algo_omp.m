@@ -1,4 +1,4 @@
-%FUNCTION algo_omp solves y = Ax, takes the input parameters y, A, k where
+%Function algo_omp solves y = Ax, takes the input parameters y, A, k where
 %y is the output field, A is the dataset field and k is the sparsity. It
 %return the solution of x.
 function  x = algo_omp(k, A, y)
