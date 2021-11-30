@@ -1,6 +1,7 @@
 % Function to perform compressed sensing and to plot out all the required
 % graphs
 function compressed_sensing(n,m, type, initial_sparsity, final_sparsity, step_size, figure_num)
+    addpath('matrix_constructions')
     disp("Figure number "+string(figure_num) +": " +type+ " matrix");
     
     % Initialize variables

@@ -1,6 +1,7 @@
 % This function is the main function and once called, will call the rest of
 % the defined function to output the required graphs
 function main()
+    addpath('helper_functions')
     % Keep track of execution time
     tic;
     % Clear and close all previously executed figures
