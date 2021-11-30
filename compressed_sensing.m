@@ -56,6 +56,7 @@ function compressed_sensing(n,m, type, initial_sparsity, final_sparsity, step_si
         end
         novel_matrix = novel_matrix(1:other_row,1:n);
     end
+    bch = gen_bch_matrix(n, initial_sparsity, p_ary);
     plot_x = 1:1:final_sparsity;
 
     % Test for different sparsity levels
@@ -106,7 +107,6 @@ function compressed_sensing(n,m, type, initial_sparsity, final_sparsity, step_si
 
             % **********************BCH***********************
             % Creating a bch matrix
-            bch = gen_bch_matrix(n, s, p_ary);
             bch = bch(1:bch_row,:);
             % Recovery
             bch_percentage = sensing_matrix_method(bch, signal, noisy_signal, s, n);
